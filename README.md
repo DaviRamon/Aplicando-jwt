@@ -25,8 +25,8 @@ incluir no zip o index.js com o codigo e o node_modules com as dependencias inst
 
 também pode ser feito pelo AWS CLI por meio do comando.
 
-NO TERMINAL 
-crair um .zip com os arquivos desejados e utilizar o método abaixo
+## NO TERMINAL 
+criar um .zip com os arquivos desejados e utilizar o método abaixo
 
 aws lambda update-function-code --function-name nome-da-funcao --zip-file fileb://arquivo-desejado.zip
                       
