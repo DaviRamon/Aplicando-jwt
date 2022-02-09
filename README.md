@@ -1,7 +1,4 @@
-# servless-api-rest-AWS
-
-Criação de uma API REST usando os serviçoes da AWS
-utilizando servless e AWS API Gateway
+# function-lambda-AWS
 
 instalar o AWS cli. conforme seu sistema operacional
 https://docs.aws.amazon.com/pt_br/cli/latest/userguide/install-cliv2.html
