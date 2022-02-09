@@ -25,27 +25,7 @@ incluir no zip o index.js com o codigo e o node_modules com as dependencias inst
 
 também pode ser feito pelo AWS CLI por meio do comando.
 
-aws lambda update-function-code --function-name NOME-DA-FUNCAO--zip-file fileb://ARQUIVO.ZIP
-
-exemplo: 
-                        NO TERMINAL 
+NO TERMINAL 
                         crair um .zip com os arquivos desejados e utilizar o método abaixo
                         aws lambda update-function-code --function-name nome-da-funcao --zip-file fileb://arquivo-desejado.zip
-                        {
-                            "TracingConfig": {
-                                "Mode": "PassThrough"
-                            },
-                            "Runtime": "nodejs14.x",
-                            "FunctionArn": "arn:aws:lambda:sa-east-1:xxxxxxxxxxxxxxx:function:function-teste",
-                            "CodeSha256": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-                            "Description": "",
-                            "Role": "arn:aws:iam::xxxxxxxxxxxx:role/service-role/function-teste-role-xxxxxxxx",
-                            "LastModified": "2022-02-09T21:04:13.000+0000",
-                            "CodeSize": 9xxxxx,
-                            "Handler": "index.handler",
-                            "RevisionId": "1xxxxxx-exxx4-4c0a-xxxxx-XXXXXXx",
-                            "Timeout": 3,
-                            "FunctionName": "function-teste",
-                            "Version": "$LATEST",
-                            "MemorySize": 128
-                        }
+                      
