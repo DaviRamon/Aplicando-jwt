@@ -1,26 +1,21 @@
-const pacientes= [
-    {id: 1, nome: "Davi", idade: 32},
-    {id: 2, nome: "Bruna", idade: 26},
-    {id: 3, nome: "Betoven", idade: 7},
-    {id: 4, nome: "Theo", idade: 3}
+const pacientes = [
+    {id: 1, nome: "Maria", idade: 20},
+    {id: 2, nome: "Joao", idade: 30},
+    {id: 3, nome: "Jose", idade: 45}
 ];
 
-exports.handler = async (event) => {
-    // TODO implement
-    console.log("DEU BOA");
-    console.log(event);
-    
-    
-    const { pacienteId } = event;
-    const pacienteEncontrado = pacientes.find(paciente=> paciente.id == pacienteId)
+function buscarPaciente(id) {
+    return pacientes.find(paciente => paciente.id == id);
+}
 
+exports.handler = async (event) => {
+    console.log("Paciente informado: " + event.pacienteId);
+
+    const pacienteEncontrado = event.pacienteId ? buscarPaciente(event.pacienteId): pacientes
 
     const response = {
         statusCode: 200,
         body: JSON.stringify(pacienteEncontrado),
     };
     return response;
-    
-
- 
 };

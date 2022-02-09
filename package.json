@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DaviRamon/Aplicando-jwt/issues"
   },
-  "homepage": "https://github.com/DaviRamon/Aplicando-jwt#readme"
+  "homepage": "https://github.com/DaviRamon/Aplicando-jwt#readme",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
